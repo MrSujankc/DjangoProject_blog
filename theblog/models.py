@@ -7,6 +7,7 @@ class Post(models.Model):
     title_tag = models.CharField(max_length=250,)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     content = models.TextField()
+    post_date = models.DateField(auto_now_add=True)
 
 
     def __str__(self):

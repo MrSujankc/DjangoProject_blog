@@ -2,6 +2,9 @@
 from django.urls import path
 from . views import HomeView, ArticleDetailView, AddPostView, UpdatePostView, DeletePostView
 
+app_name = "theblog"
+
+
 urlpatterns = [
    #path('', views.home, name='home'),
     path('', HomeView.as_view(), name="home"),
